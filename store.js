@@ -26,7 +26,7 @@ function addData (data) {
 }
 
 function resetNewData () {
-  store.newData = 0;
+  store.newData = [];
 
   return store.newData
 }
