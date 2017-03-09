@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SunPuter | Солнечный компьютер, интерфейс сбора данных</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      .btn {
+        display: block;
+      }
+    </style>
+    <script src="clipboard.min.js"></script>
+    <script src="colors.js"></script>
+  </head>
+  <body>
+    <div class="Wr">
+      <div id="push" class="btn">Цвет</div>
+      <div id="loader" style="display: block;">Обновление...</div>
+      <div id="main" style="display: none;">
+        <div id="res"></div>
+        <br>
+        <div>Обучающая выборка содержит <b id="numLength">0</b> значений</div><br>
+        <h3>Добавить правильный результат в набор</h3>
+        Выберте правильный цвет: <br><select id="colors" style="display: none;"></select><br>
+        <div id="colorLinks"></div>
+        <br>
+        <br>
+        <!-- <div id="saveIt" class="btn">Добавить в набор</div> -->
+        <div id="copy" class="btn copy">Переобучить</div>
+        <br><br>
+        <div id="rgbColors"></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
